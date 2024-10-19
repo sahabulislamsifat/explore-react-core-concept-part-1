@@ -1,23 +1,33 @@
 import "./App.css";
+import BookStore from "./src/BookStore";
 // import Todo from "./Todo";
-import Actor from "./actor";
-import Singers from "./singer";
+// import Actor from "./actor";
+// import Singers from "./singer";
+import 
 
 function App() {
-  const actors = ["Sakib", "Jashim", "Rubel", "Bappa Raz", "Hero Alam"];
-  const singer = [
-    { id: 1, name: "Dr Mahfuzur Rahman", age: 68 },
-    { id: 2, name: "Pritom Hasan", age: 78 },
-    { id: 3, name: "Dj Shofique", age: 57 },
-    { id: 4, name: "Dj Bravo", age: 65 },
+  // const actors = ["Sakib", "Jashim", "Rubel", "Bappa Raz", "Hero Alam"];
+  // const singer = [
+  //   { id: 1, name: "Dr Mahfuzur Rahman", age: 68 },
+  //   { id: 2, name: "Pritom Hasan", age: 78 },
+  //   { id: 3, name: "Dj Shofique", age: 57 },
+  //   { id: 4, name: "Dj Bravo", age: 65 },
+  // ];
+  const books = [
+    { id: 1, name: "Physics", price: 100 },
+    { id: 2, name: "Chemistry", price: 200 },
+    { id: 3, name: "Biology", price: 300 },
+    { id: 4, name: "Higher Math", price: 400 },
+    { id: 5, name: "English", price: 500 },
   ];
   return (
     <>
-      <h2>Vite + React</h2>
+      <BookStore book={books}></BookStore>
+      {/* <h2>Vite + React</h2>
 
       {singer.map((singer) => (
         <Singers singer={singer}></Singers>
-      ))}
+      ))} */}
 
       {/* <Actor name={"Bappa Raz"}></Actor>
       {actors.map((actor) => (
